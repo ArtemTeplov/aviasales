@@ -1,0 +1,46 @@
+$distance-checkbox-text: 50px;
+$hover-color: #F1FCFF;
+$background-color-app: #F3F7FA;
+$primary-color: #2196F3;
+$primary-text-color: #4A4A4A;
+$primary-border-color: #DFE5EC;
+$secondary-background-color: #fff;
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    margin-bottom: 20px;
+}
+
+.tab {
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 600;
+    flex: 1 1 auto;
+    padding: 15px;
+    outline: none;
+    background-color: $secondary-background-color;
+    color: $primary-text-color;
+    border: 1px solid $primary-border-color;
+    
+    &:hover {
+	background-color: $hover-color;
+    border: 1px solid $hover-color;
+    }
+
+    &:focus {
+	background-color: $primary-color;
+	color: $secondary-background-color;
+    border: 1px solid $primary-color;
+    }
+}
+
+.tab-left {
+    border-radius: 6px 0px 0 6px;
+}
+
+.tab-right {
+    border-radius: 0px 6px 6px 0;
+}    
