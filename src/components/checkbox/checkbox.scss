@@ -1,0 +1,66 @@
+$distance-checkbox-text: 50px;
+$hover-color: #F1FCFF;
+$background-color-app: #F3F7FA;
+$primary-color: #2196F3;
+$primary-text-color: #4A4A4A;
+$primary-border-color: #DFE5EC;
+$secondary-background-color: #fff;
+
+.checkbox {
+    font-family: Open Sans;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding: 10px 20px 10px $distance-checkbox-text;
+    
+    &:hover{
+        background-color: $hover-color;
+    }
+}
+
+
+.checkbox-input {
+    position: absolute;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.checkbox-custom {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url('./checkbox-enabled-unchecked.svg');
+    background-size: contain;
+    margin-left: -30px;
+}
+
+.checkbox-input:checked + .checkbox-custom {
+    background-image: url('./checkbox-enabled-checked.svg');
+}
+
+.transfer-options {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: $secondary-background-color;
+    padding: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0px 2px 8px 0px #000000 10%;
+}
+
+.transfer-options-title {
+    text-transform: uppercase;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    margin: 0;
+    padding: 10px 20px 10px 20px;
+}
