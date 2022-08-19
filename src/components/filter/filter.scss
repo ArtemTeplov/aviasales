@@ -1,0 +1,12 @@
+$secondary-background-color: #fff;
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    min-width: 232px;
+    border-radius: 5px;
+    background-color: $secondary-background-color;
+    margin-left: 50px;
+    height: 252px;
+    margin-bottom: 50px;
+}
