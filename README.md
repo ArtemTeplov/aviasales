@@ -1,1 +1,1 @@
-https://aviasales-snowy.vercel.app/
+https://aviasales-artemteplov.vercel.app/
